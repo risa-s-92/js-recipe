@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>りさが踊っているダンスのジャンルはなんでしょう</h3>
+    <button id="hiphop-button">Hip-Hop</button>
+    <button id="lock-button">Lock</button>
+    <button id="jazz-button">Jazz</button>
+    <div id="display"></div>
+
+    <script>
+      const hiphopButton = document.getElementById("hiphop-button")
+      const lockButton = document.getElementById("lock-button")
+      const jazzButton = document.getElementById("jazz-button")
+      const display = document.getElementById("display")
+
+      hiphopButton.onclick = function() {
+        display.textContent = "不正解！"
+      }
+      lockButton.onclick = function() {
+        display.textContent = "正解！"
+      }
+      jazzButton.onclick = function() {
+        display.textContent = "不正解！"
+      }
+    </script>
+  </body>
+</html>
