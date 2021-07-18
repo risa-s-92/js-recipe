@@ -13,18 +13,18 @@ const quiz = {
     {
       text: "ゴリアテ",
       feedback:
-        "残念！ゴリアテは、旧約聖書に登場するダビデに石で殺される巨人だよ。",
-    },
-    {
+      "残念！ゴリアテは、旧約聖書に登場するダビデに石で殺される巨人だよ。",
+
       text: "ゼニガメ",
-      feedback: "残念！ゼニガメは、クサガメまたはニホンイシガメの幼体だよ。",
-    },
-    {
+      feedback:
+      "残念！ゼニガメは、クサガメまたはニホンイシガメの幼体だよ。",
+
       text: "ガニメデ",
-      feedback: "正解！ガニメデは、木星の第三惑星だよ！",
-    },
-  ],
+      "正解！ガニメデは、木星の第三惑星だよ！",
+    }
+  ]
 }
+
 
 // quiz を画面に表示する関数
 const reloadQuiz = function() {
@@ -46,18 +46,21 @@ const choose = function(choiceNumber) {
   feedback.textContent = quiz.choices[choiceNumber].feedback
 }
 
-choice1.onclick = function() {
-  // 0 番目の選択肢を選択
-  choose(0)
-}
-choice2.onclick = function() {
-  // 1 番目の選択肢を選択
-  choose(1)
-}
-choice3.onclick = function() {
-  // 2 番目の選択肢を選択
-  choose(2)
-}
+    
+    choice1.onclick = function() {
+      // 0 番目の選択肢を選択
+      choose(0)
+    }
+    choice2.onclick = function() {
+      // 1 番目の選択肢を選択
+      choose(1)
+    }
+    choice3.onclick = function() {
+      // 2 番目の選択肢を選択
+      choose(2)
+    }
+    
+
 
 // reloadQuiz関数 を実行して、クイズを画面に表示する
 reloadQuiz()
