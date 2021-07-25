@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vue チュートリアル</title>
+  </head>
+  <body>
+    <!-- 👇3.Vueと結びつけたタグの中でVueの構文が使える。👇 -->
+    <div id="app">
+      <!-- マスタッシュ構文 -->
+      <section>
+        {{ message}}
+      </section>
+      <!--v-model-->
+      <section>
+        <input type="text" v-model="message" />
+      </section>
+    </div>
+    <!-- 👇1.CDN経由でscriptタグを使ってVueを読み込む👇 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- 👇2.読み込んだ後の行で`new Vue`が使える。👇 -->
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          message: "Vue Devtoolsを使ってこのメッセージを書き換えてみましょう!",
+        },
+      })
+    </script>
+  </body>
+</html>
+
+<!-- === このメッセージは消しても構いません === -->
+
+<!-- ✅ 👈のメニューから一番下の「👬」のアイコンを選んで -->
+<!--    Live Modeを「Everyone cab edit」に変更した後、 -->
+<!--    「You're live!」の下、「Stop Session」の上、にあるリンクをShareしましょう -->
+<!-- ✅ CodeSandBoxはVS Codeとほぼ同じ様に扱えます。 -->
+<!-- ✅ 👉にある画面が実行画面です。 -->
+<!-- ✅ 👉の👇にある「Console」が実行時のConsoleになります。 -->
+<!--    たまに挙動がおかしい時があるので気をつけましょう。 -->
+
+<!-- =============================== -->
